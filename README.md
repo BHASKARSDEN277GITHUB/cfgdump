@@ -9,8 +9,9 @@ cfgdump is a small utility that </br>
 7) encrypt the file using http://www.cryptopp.com/ library </br>
 
 </br>
-for compilation :</br>
+For compilation :</br>
 gcc -o driver driver.c search.c </br>
 
-
+</br>
+idm/* is a directory structure for testing . (In driver references are created to the same)
 
