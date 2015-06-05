@@ -7,3 +7,10 @@ cfgdump is a small utility that </br>
 5) you will need to zip up the contents of the file using https://code.google.com/p/miniz/ library</br>
 6) Ask the user for a password </br>
 7) encrypt the file using http://www.cryptopp.com/ library </br>
+
+</br>
+for compilation :</br>
+gcc -o driver driver.c search.c </br>
+
+
+
