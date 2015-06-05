@@ -28,10 +28,10 @@ void searchExe(DIR * dir, char * nameExe, char * path) { //to search where exe i
 
 		if(strcmp(name,".") && strcmp(name,"..")) {
 
-			currentPath=(char *)malloc(strlen(name)+strlen(path)+10000); //created current path
+			currentPath=(char *)malloc(strlen(name)+strlen(path)+5); //created current path
 			strcpy(currentPath,path);
 			strcat(currentPath,name);
-			newPath=(char *)malloc(strlen(currentPath)+100);
+			newPath=(char *)malloc(strlen(currentPath)+5);
 			strcpy(newPath,currentPath);
 			strcat(newPath,prefixUnix); //created  newPath (added prefix to current path)
 			
