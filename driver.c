@@ -1,4 +1,4 @@
-//driver for testing search module
+//driver module for testing
 //check header files for method declarations
 //All the inputs are static right now (Edit code in switch cases to get input dynamically)
 
