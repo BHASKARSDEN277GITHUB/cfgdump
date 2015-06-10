@@ -71,7 +71,7 @@ main() {
 
 				while(c!=EOF) {
 					putc(c,fd);
-					//also displaying the same on console also
+					// displaying the same on console also
 					printf("%c",c);
 					c=fgetc(fp);
 				}
