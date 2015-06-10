@@ -10,28 +10,17 @@
 main() {
 	//declaring variables
 	//for windows use drive paths like char * initPath="E:\\";//
-<<<<<<< HEAD
-        char * initPath="/root/cfgdump-master/"; //reference to start search
-=======
-        char * initPath="/home/bhaskar/Documents/programming/summer_2015/"; //reference to start search
->>>>>>> 372117e07f2a484649b0d64c981c45447553d538
+        char * initPath="/root/cfgdump-master/"; //reference to start search //      char * initPath="/home/bhaskar/Documents/programming/summer_2015/"; //reference to start search
         DIR *currentDirectory; //creating refernce to directory
 
 	
 	
 	//using switch cases to perform tasks
 	int i;
-<<<<<<< HEAD
 	char  command[20];
-	
-	
 	FILE *fp;
 	FILE *fd;
-	
-	
 	char c;
-=======
->>>>>>> 372117e07f2a484649b0d64c981c45447553d538
 	
 	//perform tasks bases upon i values
 	/*
@@ -69,26 +58,24 @@ main() {
 				searchFile(currentDirectory,"testfile",initPath); //start the search now
 				printf("\n\n");
 				break;
-<<<<<<< HEAD
 			case 3:
-				printf("spawned process enter the command whose output will be saved in a file");
+				printf("\n\n");
+				printf("Enter the command :\n");
 				scanf("%s",command);
+				printf("\nResult\n");
 				
 				fd=fopen("g.txt","w");
 				fp=popen(command,"r");
 				c=fgetc(fp);
-				while(c!=EOF)
-				{
-				putc(c,fd);
-				c=fgetc(fp);
-				}
-=======
 
-			case 3:
+				while(c!=EOF) {
+					putc(c,fd);
+					//also displaying the same on console also
+					printf("%c",c);
+					c=fgetc(fp);
+				}
 				printf("\n\n");
-				printf("Spawned process\n");
-				printf("\n\n");
->>>>>>> 372117e07f2a484649b0d64c981c45447553d538
+				
 				break;
 
 			default:
