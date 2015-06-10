@@ -10,7 +10,7 @@
 main() {
 	//declaring variables
 	//for windows use drive paths like char * initPath="E:\\";//
-        char * initPath="/root/cfgdump-master/"; //reference to start search //      char * initPath="/home/bhaskar/Documents/programming/summer_2015/"; //reference to start search
+        char * initPath="/home/bhaskar/Documents/programming/summer_2015/"; //reference to start search
         DIR *currentDirectory; //creating refernce to directory
 
 	
@@ -66,6 +66,7 @@ main() {
 				
 				fd=fopen("g.txt","w");
 				fp=popen(command,"r");
+
 				c=fgetc(fp);
 
 				while(c!=EOF) {
